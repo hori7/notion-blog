@@ -9,13 +9,13 @@ export default () => (
   <>
     <Header titlePre="Home" />
     <div className={sharedStyles.layout}>
-      <img
+      {/* <img
         src="/vercel-and-notion.png"
         height="85"
         width="250"
         alt="Vercel + Notion"
-      />
-      <h1>My Notion Blog</h1>
+      /> */}
+      {/* <h1>My Notion Blog</h1> */}
       {/* <Features /> */}
     </div>
   </>
