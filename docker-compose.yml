@@ -5,16 +5,17 @@ services:
       context: .
       dockerfile: ./docker/app/Dockerfile
     ports:
-      - "80:80"
+      - '80:80'
     environment:
       - NODE_ENV=development
     volumes:
-      - ./src/app:/code
+      # - ./src/app:/code
+      - .:/code
 
   web:
     image: nginx:1.17.3-alpine
     ports:
-      - "8081:8081"
+      - '8081:8081'
     depends_on:
       - php
     volumes:
